@@ -54,3 +54,14 @@ exit /b 0
 
 :labelb 
 echo "The value of a is 10"
+
+::Return codes -> https://www.tutorialspoint.com/batch_script/batch_script_return_code.htm
+::La variable %ERRORLEVEL% contiene el código de retorno del ultimo programa ejecutado.
+::IF %ERRORLEVEL% NEQ 0 ( 
+::   DO_Something 
+::)
+::Es comun hacer lo siguiente para detener la ejecucion del script batch y retornar el resultado
+Exit /B %ERRORLEVEL%
+::También podemos utilizar un código de salida "personalizado"
+Exit /B 0
+::De esta forma podemos ejecutar programas de manera condicional al éxito de una ejecucion anterior, 
