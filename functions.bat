@@ -1,3 +1,4 @@
+::File Inputs - Recuerda que %0 es el nombre del programa, de %1 a %9 son parámetros de línea de comandos.
 ::Tiene una declaración y una definicion
 ::Ejemplo funcion "Display"
 :Display

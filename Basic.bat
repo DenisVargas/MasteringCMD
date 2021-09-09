@@ -4,6 +4,14 @@ rem Esto es un comentario. Significa remarks
 rem El simbolo > es un comando utilizado para redirigir el output de una operación a un archivo.
 echo "El directorio para app data es %AppData%"
 
+::Pipes: Redirige el output de un programa STDOUT a el input de otro programa STDIN utilizando el simbolo |
+dir C:\ | sort
+::Normalmente es útil combinarlo con las operaciones de redirección
+dir C:\ | find "txt" > Alltext.txt
+tasklist | find "notepad" > tasklist.txt
+::También es posible utilizar varios comandos pipes.
+dir c:\ /s /b | find "TXT" | more
+
 rem hay 2 tipos de variables.
 rem command line arguments
 echo %1
