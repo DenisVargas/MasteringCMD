@@ -20,4 +20,3 @@ taskkill /f /im notepad.exe
 ::Este comando termina con el notepad si es que esta abierto.
 taskill /pid 9214
 ::Este comando termina el proceso con pid 9214
-

@@ -38,3 +38,12 @@ rem Es preferible utilizar variables de entorno
 ::Logicos: AND OR NOT
 ::Asignación: += -= *= /= %=
 ::Bitwise: & | ^
+
+::Aliases - DOSKEY [options] [macroname=[text]]
+::Pueden crearse de la siguiente manera.
+doskey dw = dir /w
+::Pueden eliminarse asignandoles el valor nulo.
+dw = 
+::Para reemplazar un Alias, reasignamos el valor por uno nuevo.
+doskey d = dir
+d = dir /w
